@@ -18,7 +18,7 @@ async function run() {
 
         await consumer.run({
             eachMessage: async result => {
-                console.log(` Msg ${result.message.value} on partition ${result.partition}`)
+                console.log(`Msg ${result.message.value} on partition ${result.partition}`)
             }
         })
     } catch (error) {
